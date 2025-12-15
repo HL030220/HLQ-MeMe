@@ -2,7 +2,7 @@ import { GoogleGenAI } from "@google/genai";
 import { StickerGenerationParams } from "../types";
 
 // Initialize the Gemini client
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 /**
  * Generates a Q-version sticker based on an input image and a text prompt.
